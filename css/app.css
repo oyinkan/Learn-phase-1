@@ -1,0 +1,70 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	background: #112D48;
+	padding: 2rem;
+	box-sizing: border-box;
+	font-family: Graphik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.text-center {
+	text-align: center;
+}
+.logo {
+	max-width: 100%;
+	height: auto;
+}
+.login-wrapper {
+	width: 450px;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 95%;
+    background: #fff;
+    border-radius: 4px;
+    padding: 4rem 3rem;
+}
+.login-wrapper__title {
+	text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+.form-control,
+.btn {
+	font-size: 1.5rem;
+    border-radius: 2px;
+    width: 100%;
+}
+.form-control {
+	height: 5rem;
+    padding: 6px 12px;
+    border: 1px solid #dee5e7;
+    box-sizing: border-box;
+    color: #555;
+    padding-top: 2px;
+    margin-bottom: 2rem;
+}
+.btn {
+	font-size: 1.5rem;
+	background: #88D098;
+	border: 1px solid #88D098;
+	color: #fff;
+	font-weight: 700;
+	padding: 2rem;
+	padding-top: 1.5rem;
+	cursor: pointer;
+}
+.forgot-wrapper {
+	margin-top: 3rem;
+}
+.forgot-wrapper p {
+	color: rgba(255, 255, 255, 0.8);
+}
+.forgot-wrapper p a {
+	color: #fff;
+	text-decoration: none;
+}
+.forgot-wrapper p,
+.forgot-wrapper p a {
+	font-size: 1.4rem;
+
+}
