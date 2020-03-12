@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="27px" viewBox="0 0 34 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>countryselector</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="22" height="14.9529781" rx="2"></rect>
+        <filter x="-45.5%" y="-46.8%" width="190.9%" height="233.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0651770105 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="GetCarbon-Main-Website-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GetCarbon-Landingpage-(v2)" transform="translate(-1280.000000, -40.000000)">
+            <g id="Group-2" transform="translate(1.000000, -3.000000)">
+                <g id="countryselector" transform="translate(1285.000000, 46.000000)">
+                    <g id="Group-35">
+                        <g id="ng">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Mask">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                                <rect stroke="#FFFFFF" stroke-width="1" fill="#D8D8D8" fill-rule="evenodd" x="-0.5" y="-0.5" width="23" height="15.9529781" rx="2"></rect>
+                            </g>
+                            <g mask="url(#mask-2)" fill-rule="nonzero">
+                                <g transform="translate(-0.500000, -1.000000)">
+                                    <polygon id="Path" fill="#FFFFFF" points="0 0 23 0 23 17 0 17"></polygon>
+                                    <path d="M15.3309375,0 L23,0 L23,17 L15.3309375,17 L15.3309375,0 Z M0,0 L7.66546875,0 L7.66546875,17 L0,17 L0,0 Z" id="Shape" fill="#008753"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
