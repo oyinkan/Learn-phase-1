@@ -24,7 +24,7 @@
             		<button class="btn" type="submit" onclick="loginDetails()">Login to your account</button>
         		</div>
 			</form>
-			<h1 id="form-details"></h1>
+			<div id="form-details"></div>
 		</div>
 		<div class="forgot-wrapper text-center">
         	<p>New to Paystack? <a href="signup.html">Sign up</a></p>
@@ -38,15 +38,15 @@
 			const email = document.querySelector("#email");
 			const password = document.querySelector("#password");
 
-			const object = {
+			const user = {
 				email: email.value,
 				password: password.value
 			}
 
-			console.log(object);
+			console.log(user);
 
 			const details = document.getElementById("form-details");
-			details.innerHTML = "<div>Email: " +object.email+ "<br> Password: " +object.password+ "</div>";
+			details.innerHTML = "<h1>Email: " +user.email+ "<br> Password: " +user.password+ "</h1>";
 		}
 	</script>
 </body>
