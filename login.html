@@ -31,23 +31,6 @@
         	<p><a href="#">Forgot your password?</a></p>
     	</div>
 	</section>
-	<script>
-		function loginDetails() {
-			event.preventDefault();
-
-			const email = document.querySelector("#email");
-			const password = document.querySelector("#password");
-
-			const user = {
-				email: email.value,
-				password: password.value
-			}
-
-			console.log(user);
-
-			const details = document.getElementById("form-details");
-			details.innerHTML = "<h1>Email: " +user.email+ "<br> Password: " +user.password+ "</h1>";
-		}
-	</script>
+	<script src="js/login.js"></script>
 </body>
 </html>
