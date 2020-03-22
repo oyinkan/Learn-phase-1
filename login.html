@@ -15,20 +15,39 @@
 			<p class="login-wrapper__title text-center">Login</p>
 			<form>
 				<div>
-            		<input type="email" class="form-control" placeholder="Email address" required>
+            		<input type="email" class="form-control" placeholder="Email address" id="email" required>
         		</div>
         		<div>
-		            <input type="password" class="form-control" placeholder="Password" required>
+		            <input type="password" class="form-control" placeholder="Password" id="password" required>
 		        </div>
 		        <div>
-            		<button class="btn">Login to your account</button>
+            		<button class="btn" type="submit" onclick="loginDetails()">Login to your account</button>
         		</div>
 			</form>
+			<h1 id="form-details"></h1>
 		</div>
 		<div class="forgot-wrapper text-center">
         	<p>New to Paystack? <a href="signup.html">Sign up</a></p>
         	<p><a href="#">Forgot your password?</a></p>
     	</div>
 	</section>
+	<script>
+		function loginDetails() {
+			event.preventDefault();
+
+			const email = document.querySelector("#email");
+			const password = document.querySelector("#password");
+
+			const object = {
+				email: email.value,
+				password: password.value
+			}
+
+			console.log(object);
+
+			const details = document.getElementById("form-details");
+			details.innerHTML = "<div>Email: " +object.email+ "<br> Password: " +object.password+ "</div>";
+		}
+	</script>
 </body>
 </html>
