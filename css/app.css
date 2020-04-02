@@ -85,7 +85,11 @@ label {
 	color: #3676c8;
 	text-decoration: none;
 }
-
+form .error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+}
 /* index.html */
 nav {
 	background: #fff;

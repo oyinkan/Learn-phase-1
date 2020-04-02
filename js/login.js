@@ -1,16 +1,22 @@
-function loginDetails() {
-	event.preventDefault();
+document.querySelector("#loginForm").addEventListener("submit", function(e){
+    e.preventDefault();
 
-	const email = document.querySelector("#email");
-	const password = document.querySelector("#password");
-
-	const user = {
-		email: email.value,
-		password: password.value
-	}
-
-	console.log(user);
-
+    const email = document.querySelector("#email").value;
+	const password = document.querySelector("#password").value;
+	const error = document.querySelector('.error');
 	const details = document.getElementById("form-details");
-	details.innerHTML = "<h1>Email: " +user.email+ "<br> Password: " +user.password+ "</h1>";
-}
+
+	if (email != "" && password != "") {
+		const user = {
+			email: email,
+			password: password
+		}
+
+		console.log(user);
+		details.innerHTML = `<h1>Email:  ${user.email} <br> Password: ${user.password} </h1>`;
+	}	
+
+	else {
+		error.innerHTML = "Email or Password missing"
+	}
+});
