@@ -1,8 +1,8 @@
 document.querySelector("#loginForm").addEventListener("submit", function(e){
     e.preventDefault();
 
-    const email = document.querySelector("#email").value;
-	const password = document.querySelector("#password").value;
+    const email = document.querySelector("#email").value.trim();
+	const password = document.querySelector("#password").value.trim();
 	const error = document.querySelector('.error');
 	const details = document.getElementById("form-details");
 
