@@ -3,18 +3,7 @@
 <head>
 	<title>Working with APIs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <style>
-        .user-wrapper {
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            padding: 10px;
-            display: inline-block;
-            float: left;
-            margin: 10px;
-        }
-        .user-wrapper:hover {
-            transform: skewX(10deg);
-        }
-    </style>
+    <link rel="stylesheet" href="css/users.css">
 </head>
 <body>
     <div>
@@ -24,25 +13,6 @@
     </div>
     
     
-    <script>
-        document.querySelector("#getData").addEventListener("click", getAPI);
-
-        function getAPI() {
-            fetch('https://jsonplaceholder.typicode.com/users')
-            .then(res => res.json())
-            .then(data => {
-                let result = ``;
-                data.forEach((user) => {
-                    const { name, website } = user;
-                    result += 
-                        `<div class="user-wrapper">
-                            <h3>${name}</h3>
-                            <a href="http://${website}" target="_blank">${website}</a>
-                        </div>`;
-                    document.getElementById("users").innerHTML = result;
-                });
-            })
-        }
-    </script>
+    <script src="js/api.js"></script>
 </body>
 </html>

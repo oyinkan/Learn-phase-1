@@ -1,0 +1,10 @@
+.user-wrapper {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    margin: 10px;
+}
+.user-wrapper:hover {
+    transform: skewX(10deg);
+}
